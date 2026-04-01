@@ -30,6 +30,9 @@ label start:
     show girl2 at right
     g2 "아니야, 날 믿어 오빠"
 
+    show mc at center
+    e "이게 무슨 말일까... 도저히 모르겠다..."
+    
     menu:
         "1. 티니핑을 믿기":
             jump girl1
@@ -57,7 +60,11 @@ label girl2:
 
     show girl2 at left
     g2 "날 믿어줬구나..."
-    return
+    
+    hide girl2
+    show mc at left
+    e "잠깐... 내가 이런 예쁜 여자를 알고 있다고...?"
+    jump hospital
 
 
 label hospital:
